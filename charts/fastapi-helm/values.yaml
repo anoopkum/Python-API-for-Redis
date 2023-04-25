@@ -1,0 +1,25 @@
+# Default values for fastapi-helm.
+replicaCount: 1
+image:
+  repository: anoopkum/fastapi-app
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+service:
+  type: ClusterIP
+  port: 8000
+  targetport: 8000
+
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  hosts:
+    - host: localhost
+  nginx:
+    enabled: true
+    name: my-nginx
+
+redis:
+ host: localhost
+ port: 6379

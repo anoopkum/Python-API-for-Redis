@@ -1,0 +1,7 @@
+apiVersion: v2
+name: fastapi-helm
+description: A Helm chart for Kubernetes to Deploy fastapi docker image
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+icon: https://en.wikiversity.org/wiki/File:FastAPI_logo.png
